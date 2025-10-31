@@ -1,130 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metales Sur — Fabricación y Diseño Metálico</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Metales Sur - Fabricación y Diseño Metalúrgico</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
-
-  <!-- NAVBAR -->
   <header>
-    <div class="logo">METALES SUR</div>
+    <img src="logo.png" alt="Metales Sur" class="logo">
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#productos">Productos</a>
-      <a href="#personalizados">Personalizados</a>
       <a href="#nosotros">Nosotros</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
-  <!-- INICIO -->
-  <section id="inicio" class="hero fade-in">
+  <section id="inicio" class="hero">
     <div class="hero-content">
-      <h1>Diseño, Resistencia y Estilo en Metal</h1>
-      <p>Somos una empresa metalúrgica con más de 10 años de experiencia, ubicada en Isidro Casanova, Buenos Aires. Nos especializamos en la fabricación de productos metálicos de alta calidad, combinando precisión, durabilidad y diseño.</p>
+      <h1>Metales Sur</h1>
+      <p>Somos una empresa metalúrgica con más de 10 años de experiencia en el diseño y fabricación de productos metálicos de alta calidad.  
+      Ubicados en Isidro Casanova, realizamos trabajos personalizados con materiales de primera línea.</p>
       <a href="#productos" class="btn">Ver Productos</a>
     </div>
   </section>
 
-  <!-- PRODUCTOS -->
-  <section id="productos" class="fade-in">
+  <section id="productos">
     <h2>Nuestros Productos</h2>
     <div class="productos-grid">
-
-      <div class="producto">
-        <img src="placa.jpg" alt="Placa Personalizada">
+      <div class="card">
+        <img src="placas.jpg" alt="Placas Personalizadas">
         <h3>Placas Personalizadas</h3>
-        <p>Diseños únicos: fútbol, marcas, frases, emprendimientos, dibujos animados y más.</p>
-        <span>$5.000</span>
+        <p>Cuadros con logos, frases o diseños personalizados.<br>Medidas: 30x30 / 40x20 / 35x25</p>
+        <span class="precio">$5.000</span>
       </div>
 
-      <div class="producto">
-        <img src="fogonero.jpg" alt="Fogonero">
+      <div class="card">
+        <img src="fogonero.jpg" alt="Fogoneros">
         <h3>Fogoneros</h3>
-        <p>Medidas en stock: 45x30 en 2.5 mm. Personalizados +$50.000.</p>
-        <span>$55.000</span>
+        <p>Comunes o personalizados (consultar precio).<br>Medida: 45x30 en 2.5mm</p>
+        <span class="precio">$55.000</span>
       </div>
 
-      <div class="producto">
-        <img src="macetero.jpg" alt="Macetero">
+      <div class="card">
+        <img src="macetero.jpg" alt="Maceteros">
         <h3>Maceteros</h3>
-        <p>45x30 cm en 1.2 mm. Personalizados +$50.000.</p>
-        <span>$35.000</span>
+        <p>Comunes o personalizados (consultar).<br>Medida: 45x30 en 1.2mm</p>
+        <span class="precio">$35.000</span>
       </div>
 
-      <div class="producto">
-        <img src="plancheta.jpg" alt="Plancheta">
+      <div class="card">
+        <img src="plancheta.jpg" alt="Planchetas">
         <h3>Planchetas</h3>
-        <p>Medidas: 20x45 cm, 3 mm de espesor.</p>
-        <span>$25.000</span>
+        <p>Medida: 20x45 en 3mm</p>
+        <span class="precio">$25.000</span>
       </div>
 
-      <div class="producto">
+      <div class="card">
         <img src="rocket.jpg" alt="Rocket">
         <h3>Rocket</h3>
-        <p>Medidas: 35x30 cm, 2 mm. Personalizados +$50.000.</p>
-        <span>$65.000</span>
+        <p>Comunes o personalizados (consultar).<br>Medida: 35x30 en 2mm</p>
+        <span class="precio">$65.000</span>
       </div>
 
-      <div class="producto">
-        <img src="panel.jpg" alt="Panel de interior">
+      <div class="card">
+        <img src="panel.jpg" alt="Paneles de Interior">
         <h3>Paneles de Interior</h3>
-        <p>2x1 mts $120.000 / 3x1 mts $180.000 / 2x2 mts $180.000 / 3x2 mts biombo ext. $600.000</p>
+        <p>Medidas: 2x1m / 3x1m / 2x2m / 3x2m biombo exterior</p>
+        <span class="precio">$120.000 - $600.000</span>
       </div>
 
-      <div class="producto">
-        <img src="porton.jpg" alt="Portón">
+      <div class="card">
+        <img src="porton.jpg" alt="Portones">
         <h3>Portones</h3>
-        <p>3x2 mts $1.544.100 / 3.5x2.1 mts $1.600.000 / 4.5x2.2 mts $1.850.000<br>Espesor: 1.5 mm</p>
+        <p>Espesor: 1.5mm<br>Medidas: 3x2m / 3.5x2.1m / 4.5x2.2m</p>
+        <span class="precio">$1.544.100 - $1.850.000</span>
       </div>
-
     </div>
   </section>
 
-  <!-- PERSONALIZADOS -->
-  <section id="personalizados" class="dark fade-in">
-    <h2>Trabajos Personalizados</h2>
-    <p>Fabricamos productos totalmente a medida con tus ideas, logos o diseños.  
-      Enviá tu imagen vectorizada y te mostramos una vista previa antes de la producción.</p>
-    <a href="https://wa.me/5491128074105" class="btn">Hacer Consulta</a>
-  </section>
-
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="fade-in">
+  <section id="nosotros" class="about">
     <h2>Sobre Nosotros</h2>
-    <p>En Metales Sur trabajamos con pasión por el metal.  
-      Nuestro taller cuenta con equipamiento profesional y un equipo comprometido con la calidad y el detalle.  
-      Combinamos tecnología, experiencia y diseño para crear productos únicos que perduran.</p>
+    <p>En <strong>Metales Sur</strong> nos dedicamos a la fabricación de productos metálicos personalizados, con un enfoque en la calidad, la durabilidad y la estética.  
+    Contamos con un taller propio en <strong>Isidro Casanova</strong> y ofrecemos soluciones tanto para particulares como para empresas.  
+    Cada pieza es elaborada con precisión, pasión y compromiso.</p>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="dark fade-in">
+  <section id="contacto" class="contacto">
     <h2>Contacto</h2>
-    <p>📞 <a href="https://wa.me/5491128074105" target="_blank">+54 11 2807-4105</a></p>
-    <p>📧 <a href="mailto:metalesargcontacto@gmail.com">metalesargcontacto@gmail.com</a></p>
-    <p>📸 <a href="https://www.instagram.com/metal_esarg" target="_blank">@metal_esarg</a></p>
-    <p>📍 Taller y punto de retiro: Isidro Casanova, Zona Oeste, Buenos Aires</p>
-    <p>🚚 Envíos: Zona Sur, Oeste y Capital Federal. Para otras provincias, consultar costo adicional.</p>
-    <p>🕒 Horario de atención: Lunes a Sábado — 9:00 a 18:00 hs</p>
+    <p>📞 WhatsApp: <a href="https://wa.me/5491128074105" target="_blank">+54 11 2807-4105</a></p>
+    <p>📧 Email: <a href="mailto:metalesargcontacto@gmail.com">metalesargcontacto@gmail.com</a></p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/metal_esarg" target="_blank">@metal_esarg</a></p>
+    <p>📍 Taller y punto de retiro: <strong>Isidro Casanova, Buenos Aires</strong></p>
+    <p>🚚 Envíos a Zona Sur, Oeste y Capital Federal.  
+    Para otras provincias, consultar costo según tamaño y destino.</p>
   </section>
 
   <footer>
-    © 2025 Metales Sur — Fabricación y Ventas. Todos los derechos reservados.
+    <p>© 2025 Metales Sur — Todos los derechos reservados.</p>
   </footer>
 
-  <script>
-    const sections = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    }, { threshold: 0.2 });
-    sections.forEach(section => observer.observe(section));
-  </script>
-
+  <a href="https://wa.me/5491128074105" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
