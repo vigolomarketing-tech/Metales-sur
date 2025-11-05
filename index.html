@@ -5,66 +5,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Metales Sur</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png">
 </head>
 <body>
-  <!-- Encabezado -->
-  <header id="inicio">
-    <div class="contenedor-texto">
-      <img src="img/logo.png" alt="Logo Metales Sur" class="logo" />
-      <h1 class="titulo">METALES SUR</h1>
-      <p class="descripcion">Somos una empresa dedicada al corte y procesamiento de metales con precisión láser.</p>
-    </div>
+  <!-- HEADER -->
+  <header>
+    <img src="logo.png" alt="Metales Sur" class="logo">
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- GIF principal -->
-  <section id="gif" class="gif-section">
-    <div class="contenedor">
-      <img src="img/corte-laser.gif" alt="Corte láser en acción" class="gif" />
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero-content">
+      <h1>Metales Sur</h1>
+      <p>Somos una empresa metalúrgica con más de 10 años de experiencia en el diseño y fabricación de productos metálicos de alta calidad.
+         Ubicados en <strong>Isidro Casanova, Buenos Aires</strong>, garantizamos resistencia, durabilidad y precisión en cada pieza.</p>
+      <a href="#productos" class="btn">Ver nuestros productos</a>
     </div>
   </section>
 
-  <!-- Productos -->
-  <section id="productos" class="productos">
-    <div class="contenedor">
-      <h2>Nuestros Productos</h2>
-      <div class="grid-productos">
-        <div class="producto">
-          <img src="img/producto1.jpg" alt="Producto 1" />
-          <h3>Producto 1</h3>
-        </div>
-        <div class="producto">
-          <img src="img/producto2.jpg" alt="Producto 2" />
-          <h3>Producto 2</h3>
-        </div>
-        <div class="producto">
-          <img src="img/producto3.jpg" alt="Producto 3" />
-          <h3>Producto 3</h3>
-        </div>
+  <!-- PRODUCTOS -->
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <div class="productos-grid">
+
+      <div class="card">
+        <img src="placas.jpg" alt="Placas Personalizadas">
+        <h3>Placas Personalizadas</h3>
+        <p>Cuadros con logos, frases o diseños personalizados.<br>Medidas: 30x30 / 40x20 / 35x25</p>
+        <span class="precio">$90.000</span>
       </div>
+
+      <div class="card">
+        <img src="macetero.jpg" alt="Maceteros Comunes">
+        <h3>Maceteros Comunes</h3>
+        <p>Medida: 45x30 en 1.2mm</p>
+        <span class="precio">$65.000</span>
+      </div>
+
+      <div class="card">
+        <img src="macetero.jpg" alt="Maceteros Personalizados">
+        <h3>Maceteros Personalizados</h3>
+        <p>Medida: 45x30 en 1.2mm</p>
+        <span class="precio">$115.000</span>
+      </div>
+
+      <div class="card">
+        <img src="fogonero.jpg" alt="Fogoneros Comunes">
+        <h3>Fogoneros Comunes</h3>
+        <p>Medida: 45x30 en 2.5mm</p>
+        <span class="precio">$95.000</span>
+      </div>
+
+      <div class="card">
+        <img src="fogonero.jpg" alt="Fogoneros Personalizados">
+        <h3>Fogoneros Personalizados</h3>
+        <p>Medida: 45x30 en 2.5mm</p>
+        <span class="precio">$145.000</span>
+      </div>
+
+      <div class="card">
+        <img src="plancheta.jpg" alt="Planchetas de Cocina">
+        <h3>Planchetas de Cocina</h3>
+        <p>Medida: 20x45 en 3mm</p>
+        <span class="precio">$45.000</span>
+      </div>
+
+      <div class="card">
+        <img src="rocket.jpg" alt="Panel Rocket">
+        <h3>Panel Rocket</h3>
+        <p>Comunes o personalizados.<br>Medida: 35x30 en 2mm</p>
+        <span class="precio">$120.000</span>
+      </div>
+
+      <div class="card">
+        <img src="panel.jpg" alt="Paneles de Interior">
+        <h3>Paneles de Interior</h3>
+        <p>Medidas: 2x1m / 3x1m / 2x2m / 3x2m biombo exterior</p>
+        <span class="precio">$110.000</span>
+      </div>
+
+      <div class="card">
+        <img src="porton.jpg" alt="Portón 3x2m">
+        <h3>Portón 3x2m</h3>
+        <span class="precio">$2.400.000</span>
+      </div>
+
+      <div class="card">
+        <img src="porton.jpg" alt="Portón 3.5x2.1m">
+        <h3>Portón 3.5x2.1m</h3>
+        <span class="precio">$2.550.000</span>
+      </div>
+
+      <div class="card">
+        <img src="porton.jpg" alt="Portón 4.5x2.2m">
+        <h3>Portón 4.5x2.2m</h3>
+        <span class="precio">$3.000.000</span>
+      </div>
+
     </div>
   </section>
 
-  <!-- Nueva sección (vacía por ahora) -->
-  <section id="nueva-seccion" class="nueva-seccion">
-    <div class="contenedor">
-      <h2>Nueva Sección</h2>
-      <p>Aquí va el contenido que me vas a pasar más adelante.</p>
-    </div>
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="about">
+    <h2>Sobre Nosotros</h2>
+    <p>En <strong>Metales Sur</strong> nos especializamos en la fabricación de productos metálicos personalizados con materiales de primera calidad.
+       Nuestro taller se encuentra en <strong>Isidro Casanova</strong> y realizamos envíos a Zona Oeste, Zona Sur y Capital Federal.
+       Nos destacamos por la precisión, el diseño y la pasión por el oficio metalúrgico.</p>
   </section>
 
-  <!-- Sobre Nosotros -->
-  <section id="sobre-nosotros" class="sobre-nosotros">
-    <div class="contenedor">
-      <h2>Sobre Nosotros</h2>
-      <p>En Metales Sur contamos con años de experiencia ofreciendo soluciones precisas y confiables en el procesamiento de metales.</p>
-    </div>
+  <!-- CONTACTO -->
+  <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <p>📧 Email: <a href="mailto:metalesargcontacto@gmail.com">metalesargcontacto@gmail.com</a></p>
+    <p>📸 Instagram: <a href="https://www.instagram.com/metal_esarg" target="_blank">@metal_esarg</a></p>
+    <p>📍 Taller y punto de retiro: <strong>Isidro Casanova, Buenos Aires</strong></p>
+    <p>🚚 Envíos a Zona Sur, Oeste y Capital Federal. Para otras provincias, consultar costo según tamaño y destino.</p>
   </section>
 
-  <!-- Pie de página -->
+  <!-- FOOTER -->
   <footer>
-    <div class="contenedor">
-      <p>&copy; 2025 Metales Sur. Todos los derechos reservados.</p>
-    </div>
+    <p>© 2025 Metales Sur — Todos los derechos reservados.</p>
   </footer>
+
+  <!-- WHATSAPP -->
+  <a href="https://wa.me/5491128074105" class="whatsapp-float" target="_blank">💬</a>
 </body>
 </html>
