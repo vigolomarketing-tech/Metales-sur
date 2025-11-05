@@ -1,277 +1,150 @@
-/* === METAL SUR - Estilo industrial moderno === */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
-
+/* ------------------------------
+   METAL SUR - ESTILO INDUSTRIAL
+--------------------------------*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #0f0f0f;
-  color: #f5f5f5;
+  background-color: #0a0a0a;
+  color: #f1f1f1;
   line-height: 1.6;
-  overflow-x: hidden;
 }
 
-/* === NAVBAR === */
+/* --------- HEADER --------- */
 header {
-  width: 100%;
-  padding: 20px 0;
-  background: #121212;
+  background-color: #111;
+  padding: 2rem 1rem;
   text-align: center;
-  border-bottom: 1px solid #2a2a2a;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  border-bottom: 2px solid #222;
 }
 
 header h1 {
-  font-size: 2rem;
-  color: #c0c0c0;
+  font-size: 2.5rem;
+  font-weight: 700;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  color: #e0e0e0;
 }
 
-/* === HERO SECTION === */
-.hero {
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('images/taller.jpg') center/cover no-repeat;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  padding: 0 20px;
-}
-
-.hero h2 {
-  font-size: 2.8rem;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #d4d4d4;
-}
-
-.hero p {
-  font-size: 1.2rem;
+header p {
   color: #bbb;
-  max-width: 700px;
+  font-weight: 300;
+  margin-top: 0.5rem;
 }
 
-.hero a {
-  margin-top: 30px;
-  padding: 12px 30px;
-  background: linear-gradient(145deg, #2b2b2b, #1a1a1a);
-  border: 1px solid #6f6f6f;
-  color: #f0f0f0;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: 0.3s ease;
-}
-
-.hero a:hover {
-  background: linear-gradient(145deg, #3b3b3b, #1f1f1f);
-  box-shadow: 0 0 10px #c0c0c0;
-}
-
-/* === SECCIONES === */
+/* --------- SECCIONES --------- */
 section {
-  padding: 80px 20px;
   max-width: 1200px;
-  margin: auto;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
 }
 
 section h2 {
-  text-align: center;
   font-size: 2rem;
-  color: #d4d4d4;
-  margin-bottom: 40px;
-  position: relative;
-}
-
-section h2::after {
-  content: "";
-  width: 60px;
-  height: 3px;
-  background: #c0c0c0;
-  display: block;
-  margin: 10px auto 0;
-  border-radius: 2px;
-}
-
-/* === QUIÉNES SOMOS === */
-.about p {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
-  color: #b0b0b0;
-  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #c0c0c0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #333;
+  padding-bottom: 0.5rem;
 }
 
-/* === CATÁLOGO === */
-.catalogo {
+/* --------- PRODUCTOS --------- */
+.productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 2rem;
 }
 
-.producto {
-  background: #1a1a1a;
-  border: 1px solid #2e2e2e;
+.card {
+  background-color: #141414;
+  border: 1px solid #2a2a2a;
   border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
   overflow: hidden;
-  text-align: center;
-  transition: 0.3s;
-  box-shadow: 0 0 10px rgba(255,255,255,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.producto:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 255, 127, 0.2);
 }
 
-.producto img {
+.card img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  border-bottom: 1px solid #2a2a2a;
 }
 
-.producto h3 {
-  font-size: 1.3rem;
-  margin: 15px 0 10px;
-  color: #f0f0f0;
+.card-content {
+  padding: 1rem;
 }
 
-.producto p {
+.card-content h3 {
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
   color: #aaa;
-  font-size: 1rem;
+  font-size: 0.95rem;
+  margin-bottom: 0.8rem;
 }
 
 .precio {
-  color: #d4af37;
-  font-weight: 700;
-  font-size: 1.1rem;
-  margin: 10px 0;
+  color: #00ff88;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
-/* === BOTÓN WHATSAPP === */
+/* --------- BOTÓN WHATSAPP --------- */
 .btn-wpp {
   display: inline-block;
-  margin: 15px 0 25px;
-  padding: 10px 22px;
-  background: #25d366;
-  color: #fff;
-  border-radius: 8px;
-  text-decoration: none;
+  background-color: #00ff88;
+  color: #111;
   font-weight: 600;
-  transition: 0.3s ease;
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .btn-wpp:hover {
-  background: #1ebd5a;
-  box-shadow: 0 0 10px #25d366;
+  background-color: #00cc6a;
+  transform: scale(1.05);
 }
 
-/* === LÁSER SECTION === */
-.laser p {
-  max-width: 850px;
-  margin: 0 auto 40px;
+/* --------- SECCIONES INFORMATIVAS --------- */
+.info-section {
+  background-color: #111;
+  padding: 3rem 1.5rem;
+  margin-top: 3rem;
+  border-top: 1px solid #222;
   text-align: center;
-  color: #b0b0b0;
 }
 
-.laser-sub {
-  background: #151515;
-  border-left: 4px solid #c0c0c0;
-  padding: 20px;
-  margin: 30px auto;
-  border-radius: 8px;
+.info-section h2 {
+  color: #00ff88;
+  margin-bottom: 1rem;
+}
+
+.info-section p {
+  color: #ccc;
   max-width: 800px;
-}
-
-.laser-sub h3 {
-  color: #c0c0c0;
-  margin-bottom: 10px;
-}
-
-.laser-sub p {
-  color: #aaa;
-}
-
-/* === CONTACTO === */
-.contacto form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  max-width: 500px;
   margin: 0 auto;
+  font-size: 1rem;
 }
 
-.contacto input, .contacto textarea {
-  padding: 12px;
-  border: none;
-  border-radius: 6px;
-  background: #1f1f1f;
-  color: #f5f5f5;
-  border: 1px solid #2c2c2c;
-}
-
-.contacto input:focus, .contacto textarea:focus {
-  outline: none;
-  border-color: #c0c0c0;
-}
-
-.contacto button {
-  padding: 12px;
-  background: linear-gradient(145deg, #2b2b2b, #1a1a1a);
-  border: 1px solid #6f6f6f;
-  color: #f0f0f0;
-  font-weight: 600;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.contacto button:hover {
-  background: linear-gradient(145deg, #3b3b3b, #1f1f1f);
-  box-shadow: 0 0 10px #c0c0c0;
-}
-
-/* === FOOTER === */
+/* --------- FOOTER --------- */
 footer {
-  background: #111;
   text-align: center;
-  padding: 20px;
+  padding: 2rem;
   color: #888;
+  background-color: #0a0a0a;
+  border-top: 1px solid #222;
   font-size: 0.9rem;
-  border-top: 1px solid #2a2a2a;
-  margin-top: 60px;
-}
-
-/* === ANIMACIONES === */
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-section, header, footer {
-  animation: fadeIn 1s ease forwards;
-}
-
-/* === RESPONSIVE === */
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-  }
-  section {
-    padding: 60px 15px;
-  }
 }
