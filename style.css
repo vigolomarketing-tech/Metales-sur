@@ -1,217 +1,98 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
+/* Estilos generales */
 body {
-  background-color: #1e1e1e;
-  color: #f0f0f0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
   line-height: 1.6;
 }
 
-/* HEADER */
-header {
-  background: #111;
-  padding: 20px 40px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-}
-
-.logo {
-  height: 60px;
-}
-
-nav a {
-  color: #f0f0f0;
-  text-decoration: none;
-  margin: 0 15px;
-  font-weight: 500;
-  transition: color 0.3s;
-}
-
-nav a:hover {
-  color: #ccc;
-}
-
-/* HERO */
-.hero {
-  background: linear-gradient(145deg, #111 0%, #2c2c2c 100%);
+h1, h2, h3 {
   text-align: center;
-  padding: 150px 20px;
-  color: #fff;
+  color: #222;
+}
+
+section {
+  padding: 60px 20px;
+}
+
+/* Encabezado */
+.hero {
+  background: linear-gradient(to right, #333, #666);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero-content {
   max-width: 800px;
   margin: auto;
-  background: rgba(255, 255, 255, 0.05);
-  padding: 60px 40px;
-  border-radius: 20px;
-  backdrop-filter: blur(5px);
 }
 
-.hero h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
 }
 
-.hero p {
-  font-size: 1.1em;
-  color: #ddd;
-  margin-bottom: 25px;
-}
-
-.btn {
-  background: #f0f0f0;
-  color: #111;
-  padding: 12px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background 0.3s, transform 0.3s;
-}
-
-.btn:hover {
-  background: #bbb;
-  transform: scale(1.05);
-}
-
-/* PRODUCTOS */
-#productos {
-  background: #2b2b2b;
-  padding: 80px 20px;
-}
-
-#productos h2 {
+/* GIF */
+.gif-section {
   text-align: center;
-  margin-bottom: 40px;
-  color: #fff;
+  background: #fff;
+  padding: 50px 0;
+}
+
+.gif {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Productos */
+.productos {
+  background: #eee;
 }
 
 .productos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 25px;
-  max-width: 1200px;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
 }
 
-.card {
-  background: #3b3b3b;
+.producto {
+  background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.6);
-}
-
-.card img {
+.producto img {
   width: 100%;
-  height: 220px;
+  height: 200px;
   object-fit: cover;
   border-radius: 8px;
-  margin-bottom: 10px;
 }
 
-.card h3 {
-  color: #fff;
-}
-
-.card p {
-  color: #ccc;
-  font-size: 0.95em;
-}
-
-.precio {
-  display: inline-block;
-  margin-top: 10px;
-  background: #000;
-  color: #fff;
-  padding: 6px 12px;
-  border-radius: 5px;
-  font-weight: bold;
-}
-
-/* NOSOTROS */
-.about {
-  background: #1e1e1e;
-  padding: 80px 20px;
+/* Nueva sección */
+.nueva-seccion {
+  background: #fff;
   text-align: center;
 }
 
-.about h2 {
-  color: #fff;
-  margin-bottom: 25px;
-}
-
-.about p {
-  color: #ccc;
-  max-width: 900px;
-  margin: auto;
-}
-
-/* CONTACTO */
-.contacto {
-  background: #2b2b2b;
-  padding: 80px 20px;
+/* Sobre nosotros */
+.sobre-nosotros {
+  background: #ddd;
   text-align: center;
 }
 
-.contacto h2 {
-  color: #fff;
-  margin-bottom: 25px;
-}
-
-.contacto a {
-  color: #f0f0f0;
-  text-decoration: underline;
-}
-
-.contacto p {
-  color: #ccc;
-}
-
-/* FOOTER */
+/* Footer */
 footer {
+  background: #333;
+  color: white;
   text-align: center;
-  background: #111;
-  padding: 20px;
-  font-size: 0.9em;
-  color: #888;
-}
-
-/* WHATSAPP */
-.whatsapp-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #25D366;
-  color: #fff;
-  font-size: 1.8em;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-  transition: transform 0.3s;
-}
-
-.whatsapp-float:hover {
-  transform: scale(1.1);
+  padding: 20px 10px;
+  font-size: 14px;
 }
