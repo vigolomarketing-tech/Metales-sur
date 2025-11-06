@@ -1,64 +1,99 @@
-/* ======== ENCABEZADO CON LOGO ======== */
-.logo-header {
-  position: relative;
-  text-align: center;
-  padding: 3rem 1rem;
-  background-color: #0a0a0a;
+/* === ESTILOS GENERALES === */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-.logo-fondo {
-  width: 180px;
+/* === ENCABEZADO === */
+header {
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+header .logo {
+  width: 120px;
   height: auto;
-  opacity: 0.9;
+  display: block;
+  margin: 0 auto 10px;
   border-radius: 50%;
-  box-shadow: 0 0 20px rgba(255,255,255,0.1);
 }
 
-.header-text h1 {
-  margin-top: 1rem;
-  font-size: 2.2rem;
-  color: #00ff88;
-  letter-spacing: 2px;
+header h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
-.header-text p {
-  color: #ccc;
-  font-weight: 300;
-}
-
-/* ======== VIDEO DE FONDO ======== */
-.video-section {
-  position: relative;
-  height: 70vh;
-  overflow: hidden;
-}
-
-.video-fondo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-}
-
-.video-section .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0,0,0,0.4);
-  z-index: 1;
-}
-
-.video-section h2 {
-  color: #fff;
-  font-size: 2rem;
-  text-shadow: 0 0 10px #000;
+/* === SECCIONES === */
+main section {
+  padding: 40px 20px;
   text-align: center;
+}
+
+main h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #2b2b2b;
+  text-transform: uppercase;
+}
+
+main p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
+/* === VIDEO === */
+.video-section {
+  background-color: #fff;
+  padding: 20px;
+}
+
+.video-section video {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* === GALERÍA DE PRODUCTOS === */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* === CONTACTO === */
+#contacto {
+  background-color: #e9e9e9;
+  border-top: 3px solid #ccc;
+}
+
+#contacto p {
+  font-size: 1.1em;
+}
+
+/* === PIE DE PÁGINA === */
+footer {
+  background-color: #2b2b2b;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9em;
+  margin-top: 40px;
 }
