@@ -1,156 +1,177 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Metales Sur - Diseño y Fabricación en Metal</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Metales Sur - Catálogo</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Pequeños estilos de seguridad para que se vea bien aunque uses el style.css anterior */
+    :root { --accent: #00ff88; --bg: #0a0a0a; --card: #141414; }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:"Poppins",sans-serif;background:var(--bg);color:#f1f1f1}
+    header{padding:2rem;text-align:center;background:#111;border-bottom:2px solid #222}
+    header h1{font-size:2.4rem;letter-spacing:1px}
+    .highlight{color:var(--accent)}
+    .video-section{width:100%;max-height:500px;overflow:hidden}
+    .video-section video{width:100%;height:auto;display:block;object-fit:cover}
+    .productos-section{max-width:1200px;margin:3rem auto;padding:0 1rem}
+    .productos-section h2{color:var(--accent);text-transform:uppercase;margin-bottom:1.2rem;text-align:center}
+    .productos-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem}
+    .card{background:var(--card);border:1px solid #222;border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+    .card img{width:100%;height:220px;object-fit:cover;display:block}
+    .card-content{padding:1rem;flex:1;display:flex;flex-direction:column}
+    .card-content h3{margin:0 0 .4rem 0}
+    .detalles{color:#aaa;font-size:.95rem;margin-bottom:.5rem}
+    select.espesor{margin:.5rem 0;padding:.45rem;border-radius:6px;border:none;background:#222;color:var(--accent)}
+    .precio{color:var(--accent);font-size:1.15rem;margin-top:auto}
+    .btn-wpp{display:inline-block;background:var(--accent);color:#111;padding:.6rem 1rem;border-radius:8px;text-decoration:none;font-weight:700;margin-top:.6rem}
+    footer{padding:1.2rem;text-align:center;color:#999;border-top:1px solid #222;margin-top:2rem}
+    @media (max-width:480px){ .card img{height:160px} }
+  </style>
 </head>
 <body>
+
   <header>
     <h1>METALES <span class="highlight">SUR</span></h1>
-    <p>Diseño, fabricación y corte láser en metal</p>
+    <p>Diseño y fabricación — corte láser</p>
   </header>
 
   <main>
 
-    <!-- VIDEO -->
-    <section class="video-section">
+    <!-- Video (mantenido en el mismo lugar) -->
+    <section class="video-section" aria-label="Video presentación">
       <video autoplay muted loop playsinline>
-        <source src="assets/video/presentacion.mp4" type="video/mp4">
-        Tu navegador no soporta videos HTML5.
+        <!-- Ajustá el nombre aquí si tu video se llama distinto -->
+        <source src="assets/video/video-fondo-diego.mp4" type="video/mp4">
+        Tu navegador no soporta reproducción de video.
       </video>
     </section>
 
-    <!-- PRODUCTOS -->
-    <section class="productos-section">
+    <!-- Productos -->
+    <section class="productos-section" aria-label="Catálogo de productos">
       <h2>Catálogo de Productos</h2>
+
       <div class="productos-grid">
 
-        <!-- PRODUCTO: PLACAS PERSONALIZADAS -->
-        <div class="card">
-          <img src="assets/images/placa.jpg" alt="Placas personalizadas">
-          <div class="card-content">
-            <h3>Placas personalizadas</h3>
-            <p class="detalles">Medidas: 30x30 / 40x20 / 35x25</p>
-            <label for="espesor-placa">Espesor:</label>
-            <select id="espesor-placa" class="espesor" data-base="35000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
-            <p class="precio">$35.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Placas%20personalizadas" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
-          </div>
-        </div>
-
-        <!-- PRODUCTO: FOGONERO -->
-        <div class="card">
-          <img src="assets/images/fogonero.jpg" alt="Fogonero">
+        <!-- Fogonero -->
+        <article class="card">
+          <img src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero">
           <div class="card-content">
             <h3>Fogonero</h3>
-            <p class="detalles">Medidas: 45x30</p>
-            <label for="espesor-fogonero">Espesor:</label>
-            <select id="espesor-fogonero" class="espesor" data-base="110000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
+            <p class="detalles">Medidas en stock: 45 x 30 cm</p>
+            <label>Espesor:
+              <select class="espesor" data-base="110000">
+                <option value="2.5">2.5 mm</option>
+                <option value="3.2">3.2 mm (+ $10.000)</option>
+              </select>
+            </label>
             <p class="precio">$110.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Fogonero" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
+            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Fogonero" target="_blank" rel="noopener">Consultar por WhatsApp</a>
           </div>
-        </div>
+        </article>
 
-        <!-- PRODUCTO: MACETERO -->
-        <div class="card">
-          <img src="assets/images/macetero.jpg" alt="Macetero">
-          <div class="card-content">
-            <h3>Macetero</h3>
-            <p class="detalles">Medidas: 45x30</p>
-            <label for="espesor-macetero">Espesor:</label>
-            <select id="espesor-macetero" class="espesor" data-base="70000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
-            <p class="precio">$70.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Macetero" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
-          </div>
-        </div>
-
-        <!-- PRODUCTO: PLANCHETA -->
-        <div class="card">
-          <img src="assets/images/planchita.jpg" alt="Plancheta">
-          <div class="card-content">
-            <h3>Planchita</h3>
-            <p class="detalles">Medidas: 20x45</p>
-            <label for="espesor-planchita">Espesor:</label>
-            <select id="espesor-planchita" class="espesor" data-base="50000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
-            <p class="precio">$50.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Plancheta" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
-          </div>
-        </div>
-
-        <!-- PRODUCTO: ROCKET -->
-        <div class="card">
-          <img src="assets/images/rocket.jpg" alt="Rocket">
+        <!-- Rocket / cohete -->
+        <article class="card">
+          <img src="assets/img/rocket.jpeg.jpeg" alt="Rocket">
           <div class="card-content">
             <h3>Rocket personalizado</h3>
-            <p class="detalles">Medidas: 35x30</p>
-            <label for="espesor-rocket">Espesor:</label>
-            <select id="espesor-rocket" class="espesor" data-base="130000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
+            <p class="detalles">Medidas: 35 x 30 cm</p>
+            <label>Espesor:
+              <select class="espesor" data-base="130000">
+                <option value="2.5">2.5 mm</option>
+                <option value="3.2">3.2 mm (+ $10.000)</option>
+              </select>
+            </label>
             <p class="precio">$130.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Rocket" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
+            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Rocket" target="_blank" rel="noopener">Consultar por WhatsApp</a>
           </div>
-        </div>
+        </article>
 
-        <!-- PRODUCTO: PANELES -->
-        <div class="card">
-          <img src="assets/images/panel.jpg" alt="Panel interior 2x1">
+        <!-- Panel interior (varias copias según tus imágenes) -->
+        <article class="card">
+          <img src="assets/img/panel-interior.jpeg.jpeg" alt="Panel interior">
           <div class="card-content">
-            <h3>Panel interior 2x1 m</h3>
-            <label for="espesor-panel">Espesor:</label>
-            <select id="espesor-panel" class="espesor" data-base="240000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
+            <h3>Panel interior 2 x 1 m</h3>
+            <p class="detalles">Panel decorativo para interior</p>
+            <label>Espesor:
+              <select class="espesor" data-base="240000">
+                <option value="2.5">2.5 mm</option>
+                <option value="3.2">3.2 mm (+ $10.000)</option>
+              </select>
+            </label>
             <p class="precio">$240.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Panel%202x1" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
+            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Panel%202x1" target="_blank" rel="noopener">Consultar por WhatsApp</a>
           </div>
-        </div>
+        </article>
 
-        <!-- PRODUCTO: BIOMBO -->
-        <div class="card">
-          <img src="assets/images/biombo.jpg" alt="Biombo exterior">
+        <!-- Panel exterior -->
+        <article class="card">
+          <img src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel exterior">
           <div class="card-content">
-            <h3>Biombo exterior 3x2 m</h3>
-            <label for="espesor-biombo">Espesor:</label>
-            <select id="espesor-biombo" class="espesor" data-base="1200000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
-            <p class="precio">$1.200.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Biombo" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
+            <h3>Panel exterior</h3>
+            <p class="detalles">Panel para exteriores — dimensiones varias</p>
+            <label>Espesor:
+              <select class="espesor" data-base="360000">
+                <option value="2.5">2.5 mm</option>
+                <option value="3.2">3.2 mm (+ $10.000)</option>
+              </select>
+            </label>
+            <p class="precio">$360.000</p>
+            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Panel%20Exterior" target="_blank" rel="noopener">Consultar por WhatsApp</a>
           </div>
-        </div>
+        </article>
 
-        <!-- PRODUCTO: PORTON -->
-        <div class="card">
-          <img src="assets/images/porton.jpg" alt="Portón 3x2">
+        <!-- Paneles decorativos -->
+        <article class="card">
+          <img src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles decorativos">
           <div class="card-content">
-            <h3>Portón 3x2 m</h3>
-            <label for="espesor-porton">Espesor:</label>
-            <select id="espesor-porton" class="espesor" data-base="3100000">
-              <option value="2.5">2.5 mm</option>
-              <option value="3.2">3.2 mm (+$10.000)</option>
-            </select>
+            <h3>Paneles decorativos</h3>
+            <p class="detalles">Diseños variados</p>
+            <label>Espesor:
+              <select class="espesor" data-base="120000">
+                <option value="2.5">2.5 mm</option>
+                <option value="3.2">3.2 mm (+ $10.000)</option>
+              </select>
+            </label>
+            <p class="precio">$120.000</p>
+            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Paneles%20Decorativos" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
+
+        <!-- Portón (nombre con acento como en tu repo) -->
+        <article class="card">
+          <img src="assets/img/portón.jpeg.jpeg" alt="Portón 3x2">
+          <div class="card-content">
+            <h3>Portón 3 x 2 m</h3>
+            <p class="detalles">Chapa 1.5 mm (ejemplo)</p>
+            <label>Espesor:
+              <select class="espesor" data-base="3100000">
+                <option value="2.5">2.5 mm</option>
+                <option value="3.2">3.2 mm (+ $10.000)</option>
+              </select>
+            </label>
             <p class="precio">$3.100.000</p>
-            <a href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20quiero%20consultar%20por%20Portón" class="btn-wpp" target="_blank">Consultar por WhatsApp</a>
+            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Porton%203x2" target="_blank" rel="noopener">Consultar por WhatsApp</a>
           </div>
-        </div>
+        </article>
+
+        <!-- Cohete (si querés mostrarlo también) -->
+        <article class="card">
+          <img src="assets/img/cohete.jpeg.jpeg" alt="Cohete / Rocket 2">
+          <div class="card-content">
+            <h3>Cohete / Modelo</h3>
+            <p class="detalles">Producto personalizado</p>
+            <label>Espesor:
+              <select class="espesor" data-base="65000">
+                <option value="2.5">2.5 mm</option>
+                <option value="3.2">3.2 mm (+ $10.000)</option>
+              </select>
+            </label>
+            <p class="precio">$65.000</p>
+            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Cohete" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+          </div>
+        </article>
 
       </div>
     </section>
@@ -158,19 +179,21 @@
   </main>
 
   <footer>
-    <p>© 2025 Metales Sur - Diseño y Fabricación</p>
+    <p>© 2025 Metales Sur — Diseño y fabricación en metal</p>
   </footer>
 
   <script>
-    document.querySelectorAll('.espesor').forEach(select => {
-      select.addEventListener('change', e => {
-        const base = parseInt(select.dataset.base);
-        const precio = select.parentElement.querySelector('.precio');
-        if (select.value === '3.2') {
-          precio.textContent = '$' + (base + 10000).toLocaleString('es-AR');
-        } else {
-          precio.textContent = '$' + base.toLocaleString('es-AR');
-        }
+    // Actualiza precios al cambiar espesor.
+    document.querySelectorAll('.espesor').forEach(sel => {
+      const precioEl = sel.parentElement.parentElement.querySelector('.precio');
+      // inicial: mostrar base formateada
+      const base = parseInt(sel.dataset.base, 10);
+      precioEl.textContent = '$' + base.toLocaleString('es-AR');
+
+      sel.addEventListener('change', () => {
+        const b = parseInt(sel.dataset.base, 10);
+        const nuevo = (sel.value === '3.2') ? b + 10000 : b;
+        precioEl.textContent = '$' + nuevo.toLocaleString('es-AR');
       });
     });
   </script>
