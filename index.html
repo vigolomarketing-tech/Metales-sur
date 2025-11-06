@@ -1,93 +1,57 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Metales Sur — Fabricación y Diseño en Metal</title>
-  <meta name="description" content="Metales Sur - Fabricación, corte láser y diseño en metal. Productos personalizados: placas, fogoneros, maceteros, paneles y portones." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Metales Sur</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <!-- =========================
-       ENCABEZADO CON LOGO DE FONDO
-  ========================== -->
-  <header class="logo-header">
-    <img src="assets/images/logo metales sur.jpeg" alt="Logo Metales Sur" class="logo-fondo">
-    <div class="header-text">
-      <h1>Metales Sur</h1>
-      <p>Fabricación y diseño en metal</p>
-    </div>
+  <header>
+    <img src="assets/img/logo-metales-sur.jpeg.jpeg" alt="Logo Metales Sur" class="logo">
+    <h1>Metales Sur</h1>
   </header>
 
-  <!-- =========================
-       SECCIÓN VIDEO DE FONDO
-  ========================== -->
-  <section class="video-section">
-    <video autoplay muted loop playsinline class="video-fondo">
-      <source src="assets/video/video fondo diego.mp4" type="video/mp4">
-      Tu navegador no soporta video HTML5.
-    </video>
-    <div class="overlay">
-      <h2>Diseño, precisión y pasión por el metal</h2>
-    </div>
-  </section>
+  <main>
+    <!-- Video de presentación -->
+    <section class="video-section">
+      <video controls autoplay muted loop>
+        <source src="assets/video/presentacion.mp4" type="video/mp4">
+        Tu navegador no soporta videos HTML5.
+      </video>
+    </section>
 
-  <!-- =========================
-       SECCIÓN QUIÉNES SOMOS
-  ========================== -->
-  <section id="nosotros" class="section about container">
-    <h2>¿Quiénes somos?</h2>
-    <p>Somos <strong>Metales Sur</strong>, una metalúrgica dedicada a la fabricación, el diseño y el corte láser de piezas en metal. Trabajamos con materiales de alta calidad y procesos precisos para entregar piezas funcionales y estéticas.</p>
-    <p>Combinamos experiencia, tecnología láser y atención al detalle para ofrecer soluciones personalizadas y duraderas.</p>
-  </section>
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos">
+      <h2>Quiénes Somos</h2>
+      <p>Somos una empresa dedicada a la fabricación, venta y diseño de productos metálicos de alta calidad. 
+      Nuestro compromiso es ofrecer soluciones innovadoras y duraderas para cada cliente.</p>
+      <img src="assets/img/panel-interior.jpeg.jpeg" alt="Panel interior">
+    </section>
 
-  <!-- =========================
-       SECCIÓN PRODUCTOS
-  ========================== -->
-  <section id="productos" class="section productos">
-    <h2>Catálogo de Productos</h2>
-
-    <div class="cards-container">
-      <div class="card">
-        <img src="assets/images/fogonero.jpeg" alt="Fogonero Metálico">
-        <div class="card-content">
-          <h3>Fogonero</h3>
-          <p>Medidas: 45x30 cm — Espesor 2.5 mm</p>
-          <p class="precio">$71.500</p>
-          <a href="https://wa.me/5491126961455" class="btn-wpp">Consultar</a>
-        </div>
+    <!-- Productos -->
+    <section id="productos">
+      <h2>Productos</h2>
+      <div class="galeria">
+        <img src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel exterior">
+        <img src="assets/img/panel-interior.jpeg (2).jpeg" alt="Panel interior 2">
+        <img src="assets/img/porton.jpeg.jpeg" alt="Portón metálico">
+        <img src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero">
+        <img src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Panel decorativo">
       </div>
+    </section>
 
-      <div class="card">
-        <img src="assets/images/rocket.jpeg" alt="Rocket personalizado">
-        <div class="card-content">
-          <h3>Rocket Personalizado</h3>
-          <p>Medidas: 35x30 cm — Espesor 2 mm</p>
-          <p class="precio">$84.500</p>
-          <a href="https://wa.me/5491126961455" class="btn-wpp">Consultar</a>
-        </div>
-      </div>
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>📞 Teléfono: (011) 1234-5678</p>
+      <p>📧 Correo: contacto@metalessur.com</p>
+      <p>📍 Dirección: Calle Industrial 145, Buenos Aires</p>
+    </section>
+  </main>
 
-      <div class="card">
-        <img src="assets/images/panel interior chat.jpeg" alt="Panel interior">
-        <div class="card-content">
-          <h3>Panel Interior</h3>
-          <p>Diseños decorativos y funcionales</p>
-          <p class="precio">$156.000</p>
-          <a href="https://wa.me/5491126961455" class="btn-wpp">Consultar</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- =========================
-       PIE DE PÁGINA
-  ========================== -->
   <footer>
-    <p>© 2025 Metales Sur — Diseño y fabricación en metal</p>
+    <p>&copy; 2025 Metales Sur. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
