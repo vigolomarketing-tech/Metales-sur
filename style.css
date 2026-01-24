@@ -14,9 +14,18 @@ body {
 
 /* HEADER */
 header {
+  position: relative;
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding: 2rem 1rem;
-  background: #111;
+
+  background-image: url("assets/img/logo-metales-sur.jpeg.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
   border-bottom: 2px solid #222;
 }
 
