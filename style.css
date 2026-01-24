@@ -13,34 +13,35 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  height: 85vh;
+  height: 70vh;
   background-image: url("assets/img/logo-metales-sur.jpeg.jpeg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: contain;
-  background-color: #0a0a0a;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 2rem;
 }
 
 .hero-overlay {
-  height: 100%;
+  width: 100%;
   background: rgba(0, 0, 0, 0.65);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 1.5rem 0;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   letter-spacing: 2px;
 }
 
 .hero p {
-  margin-top: 1rem;
-  font-size: 1.2rem;
+  margin-top: 0.6rem;
+  font-size: 1.15rem;
   color: #00ff88;
 }
+
 
 /* ===== QUIÉNES SOMOS ===== */
 .about {
