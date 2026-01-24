@@ -1,178 +1,89 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Metales Sur - Catálogo</title>
-  <link rel="stylesheet" href="style.css"> 
-
+  <meta charset="utf-8">
+  <title>Metales Sur | Corte Láser</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>METALES <span class="highlight">SUR</span></h1>
-    <p>Diseño y fabricación — corte láser</p>
-  </header>
+<header class="hero">
+  <div class="hero-overlay">
+    <h1>METALES SUR</h1>
+    <p>Fabricación y venta · Corte láser en metal</p>
+  </div>
+</header>
 
-  <main>
+<section class="about">
+  <h2>Quiénes somos</h2>
+  <p>
+    En <strong>Metales Sur</strong> nos especializamos en el diseño, fabricación
+    y corte láser de productos en metal. Trabajamos con tecnología de precisión
+    y materiales de alta calidad para ofrecer soluciones durables y a medida.
+  </p>
+</section>
 
-    <!-- Video (mantenido en el mismo lugar) -->
-    <section class="video-section" aria-label="Video presentación">
-      <video autoplay muted loop playsinline>
-        <!-- Ajustá el nombre aquí si tu video se llama distinto -->
-        <source src="assets/video/video-fondo-diego.mp4" type="video/mp4">
-        Tu navegador no soporta reproducción de video.
-      </video>
-    </section>
+<section class="video-section">
+  <video autoplay muted loop playsinline>
+    <source src="assets/video/corte-laser.mp4" type="video/mp4">
+  </video>
+</section>
 
-    <!-- Productos -->
-    <section class="productos-section" aria-label="Catálogo de productos">
-      <h2>Catálogo de Productos</h2>
+<section class="catalogo">
+  <h2>Catálogo</h2>
 
-      <div class="productos-grid">
+  <div class="grid">
 
-        <!-- Fogonero -->
-        <article class="card">
-          <img src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero">
-          <div class="card-content">
-            <h3>Fogonero</h3>
-            <p class="detalles">Medidas en stock: 45 x 30 cm</p>
-            <label>Espesor:
-              <select class="espesor" data-base="110000">
-                <option value="2.5">2.5 mm</option>
-                <option value="3.2">3.2 mm (+ $10.000)</option>
-              </select>
-            </label>
-            <p class="precio">$110.000</p>
-            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Fogonero" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-          </div>
-        </article>
+    <article class="card">
+      <img src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero">
+      <h3>Fogonero</h3>
+      <p>Diseño robusto para exterior.</p>
+      <a href="https://wa.me/5491126961455" target="_blank">Consultar</a>
+    </article>
 
-        <!-- Rocket / cohete -->
-        <article class="card">
-          <img src="assets/img/rocket.jpeg.jpeg" alt="Rocket">
-          <div class="card-content">
-            <h3>Rocket personalizado</h3>
-            <p class="detalles">Medidas: 35 x 30 cm</p>
-            <label>Espesor:
-              <select class="espesor" data-base="130000">
-                <option value="2.5">2.5 mm</option>
-                <option value="3.2">3.2 mm (+ $10.000)</option>
-              </select>
-            </label>
-            <p class="precio">$130.000</p>
-            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Rocket" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-          </div>
-        </article>
+    <article class="card">
+      <img src="assets/img/rocket.jpeg.jpeg" alt="Rocket">
+      <h3>Rocket personalizado</h3>
+      <p>Fabricación a medida.</p>
+      <a href="https://wa.me/5491126961455" target="_blank">Consultar</a>
+    </article>
 
-        <!-- Panel interior (varias copias según tus imágenes) -->
-        <article class="card">
-          <img src="assets/img/panel-interior.jpeg.jpeg" alt="Panel interior">
-          <div class="card-content">
-            <h3>Panel interior 2 x 1 m</h3>
-            <p class="detalles">Panel decorativo para interior</p>
-            <label>Espesor:
-              <select class="espesor" data-base="240000">
-                <option value="2.5">2.5 mm</option>
-                <option value="3.2">3.2 mm (+ $10.000)</option>
-              </select>
-            </label>
-            <p class="precio">$240.000</p>
-            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Panel%202x1" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-          </div>
-        </article>
+    <article class="card">
+      <img src="assets/img/panel-interior.jpeg.jpeg" alt="Panel interior">
+      <h3>Panel interior</h3>
+      <p>Decorativo y funcional.</p>
+      <a href="https://wa.me/5491126961455" target="_blank">Consultar</a>
+    </article>
 
-        <!-- Panel exterior -->
-        <article class="card">
-          <img src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel exterior">
-          <div class="card-content">
-            <h3>Panel exterior</h3>
-            <p class="detalles">Panel para exteriores — dimensiones varias</p>
-            <label>Espesor:
-              <select class="espesor" data-base="360000">
-                <option value="2.5">2.5 mm</option>
-                <option value="3.2">3.2 mm (+ $10.000)</option>
-              </select>
-            </label>
-            <p class="precio">$360.000</p>
-            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Panel%20Exterior" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-          </div>
-        </article>
+    <article class="card">
+      <img src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel exterior">
+      <h3>Panel exterior</h3>
+      <p>Resistente a la intemperie.</p>
+      <a href="https://wa.me/5491126961455" target="_blank">Consultar</a>
+    </article>
 
-        <!-- Paneles decorativos -->
-        <article class="card">
-          <img src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles decorativos">
-          <div class="card-content">
-            <h3>Paneles decorativos</h3>
-            <p class="detalles">Diseños variados</p>
-            <label>Espesor:
-              <select class="espesor" data-base="120000">
-                <option value="2.5">2.5 mm</option>
-                <option value="3.2">3.2 mm (+ $10.000)</option>
-              </select>
-            </label>
-            <p class="precio">$120.000</p>
-            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Paneles%20Decorativos" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-          </div>
-        </article>
+    <article class="card">
+      <img src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles decorativos">
+      <h3>Paneles decorativos</h3>
+      <p>Diseños modernos en metal.</p>
+      <a href="https://wa.me/5491126961455" target="_blank">Consultar</a>
+    </article>
 
-        <!-- Portón (nombre con acento como en tu repo) -->
-        <article class="card">
-          <img src="assets/img/portón.jpeg.jpeg" alt="Portón 3x2">
-          <div class="card-content">
-            <h3>Portón 3 x 2 m</h3>
-            <p class="detalles">Chapa 1.5 mm (ejemplo)</p>
-            <label>Espesor:
-              <select class="espesor" data-base="3100000">
-                <option value="2.5">2.5 mm</option>
-                <option value="3.2">3.2 mm (+ $10.000)</option>
-              </select>
-            </label>
-            <p class="precio">$3.100.000</p>
-            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Porton%203x2" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-          </div>
-        </article>
+    <article class="card">
+      <img src="assets/img/porton.jpeg" alt="Portón metálico">
+      <h3>Portón metálico</h3>
+      <p>Fabricación robusta.</p>
+      <a href="https://wa.me/5491126961455" target="_blank">Consultar</a>
+    </article>
 
-        <!-- Cohete (si querés mostrarlo también) -->
-        <article class="card">
-          <img src="assets/img/cohete.jpeg.jpeg" alt="Cohete / Rocket 2">
-          <div class="card-content">
-            <h3>Cohete / Modelo</h3>
-            <p class="detalles">Producto personalizado</p>
-            <label>Espesor:
-              <select class="espesor" data-base="65000">
-                <option value="2.5">2.5 mm</option>
-                <option value="3.2">3.2 mm (+ $10.000)</option>
-              </select>
-            </label>
-            <p class="precio">$65.000</p>
-            <a class="btn-wpp" href="https://wa.me/5491126961455?text=Hola%20Metales%20Sur,%20consulta%20por%20Cohete" target="_blank" rel="noopener">Consultar por WhatsApp</a>
-          </div>
-        </article>
+  </div>
+</section>
 
-      </div>
-    </section>
+<footer>
+  © 2026 Metales Sur
+</footer>
 
-  </main>
-
-  <footer>
-    <p>© 2025 Metales Sur — Diseño y fabricación en metal</p>
-  </footer>
-
-  <script>
-    // Actualiza precios al cambiar espesor.
-    document.querySelectorAll('.espesor').forEach(sel => {
-      const precioEl = sel.parentElement.parentElement.querySelector('.precio');
-      // inicial: mostrar base formateada
-      const base = parseInt(sel.dataset.base, 10);
-      precioEl.textContent = '$' + base.toLocaleString('es-AR');
-
-      sel.addEventListener('change', () => {
-        const b = parseInt(sel.dataset.base, 10);
-        const nuevo = (sel.value === '3.2') ? b + 10000 : b;
-        precioEl.textContent = '$' + nuevo.toLocaleString('es-AR');
-      });
-    });
-  </script>
 </body>
 </html>
