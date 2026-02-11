@@ -6,14 +6,14 @@
   <title>Metales Sur | Corte Láser y Fabricación</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
 
+<body>
   <!-- NAV -->
   <nav class="nav">
     <div class="nav__inner">
       <a class="brand" href="#">
         <span class="brand__dot"></span>
-        METALES SUR
+        <span class="brand__text">METALES SUR</span>
       </a>
 
       <div class="nav__links">
@@ -25,12 +25,14 @@
   </nav>
 
   <!-- HERO (SIN IMAGEN) -->
-  <header class="hero hero--noimg">
-    <div class="hero__overlay"></div>
+  <header class="hero">
+    <div class="hero__bg"></div>
 
-    <div class="hero__content">
+    <div class="container hero__content">
       <p class="kicker">Corte láser · Diseño · Fabricación</p>
-      <h1>Metal con precisión. <span>Terminación premium.</span></h1>
+
+      <h1>Metal con precisión.<br><span>Terminación premium.</span></h1>
+
       <p class="sub">
         Productos para interior y exterior, personalizados a medida.
         Calidad, detalles finos y entrega prolija.
@@ -48,49 +50,47 @@
     <div class="container">
       <h2>Fabricación & Corte Láser</h2>
       <p>
-        Trabajamos con precisión, calidad y diseños personalizados adaptados a cada cliente.
         Soluciones en metal para hogares, comercios e industria.
+        Diseños a medida con calidad y terminación prolija.
       </p>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section class="section about" id="about">
-    <div class="container">
-      <div class="about__grid">
-        <div>
-          <h2>Quiénes somos</h2>
-          <p>
-            En Metales Sur nos especializamos en diseño, fabricación y corte láser de productos metálicos
-            para interiores y exteriores. Nos enfocamos en detalles, terminación y resistencia.
-          </p>
+    <div class="container about__grid">
+      <div class="about__left">
+        <h2>Quiénes somos</h2>
+        <p>
+          En Metales Sur nos especializamos en diseño, fabricación y corte láser de productos metálicos
+          para interiores y exteriores. Trabajamos con precisión, resistencia y estética.
+        </p>
 
-          <ul class="bullets">
-            <li>Diseños a medida y asesoramiento</li>
-            <li>Terminación prolija y materiales de calidad</li>
-            <li>Entrega clara y seguimiento</li>
-          </ul>
-        </div>
+        <ul class="bullets">
+          <li>Diseño personalizado y asesoramiento</li>
+          <li>Calidad de materiales y terminación premium</li>
+          <li>Trabajo prolijo y seguimiento</li>
+        </ul>
+      </div>
 
-        <div class="about__card">
-          <p class="about__cardTitle">Servicios</p>
-          <div class="about__tags">
-            <span>Corte láser</span>
-            <span>Soldadura</span>
-            <span>Diseño</span>
-            <span>Fabricación</span>
-            <span>Instalación</span>
-          </div>
-          <p class="about__note">
-            Si querés, armamos catálogo completo con medidas, opciones y terminaciones.
-          </p>
+      <div class="about__card">
+        <p class="about__cardTitle">Servicios</p>
+        <div class="about__tags">
+          <span>Corte láser</span>
+          <span>Soldadura</span>
+          <span>Diseño</span>
+          <span>Fabricación</span>
+          <span>Instalación</span>
         </div>
+        <p class="about__note">
+          Consultanos por medidas, modelos, terminaciones y presupuestos.
+        </p>
       </div>
     </div>
   </section>
 
   <!-- VIDEO -->
-  <section class="section video-section" aria-label="Video de corte láser">
+  <section class="section video-section">
     <div class="container">
       <div class="videoWrap">
         <video autoplay muted loop playsinline>
@@ -107,106 +107,115 @@
     <div class="container">
       <div class="sectionHead">
         <h2>Productos</h2>
-        <p>Una selección de trabajos. Consultanos por medidas, modelos y personalización.</p>
+        <p>Tocá cualquier producto para ver la imagen en grande.</p>
       </div>
 
       <div class="grid">
         <!-- Fogonero -->
         <article class="card">
-          <div class="card__imgWrap">
+          <button class="card__imgWrap" type="button" data-full="assets/img/fogonero.jpeg.jpeg" aria-label="Ver Fogonero en grande">
             <img loading="lazy" src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero" />
-          </div>
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Fogonero</h3>
-            <p>Diseños robustos, terminación prolija y opciones personalizadas.</p>
+            <p>Diseños robustos con terminación prolija.</p>
           </div>
         </article>
 
         <!-- Rocket -->
         <article class="card">
-          <div class="card__imgWrap">
+          <button class="card__imgWrap" type="button" data-full="assets/img/rocket.jpeg.jpeg" aria-label="Ver Rocket en grande">
             <img loading="lazy" src="assets/img/rocket.jpeg.jpeg" alt="Rocket" />
-          </div>
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Rocket</h3>
-            <p>Compacto, eficiente y con estética premium para exterior.</p>
+            <p>Compacto, eficiente y premium para exterior.</p>
           </div>
         </article>
 
         <!-- Biombo -->
         <article class="card">
-          <div class="card__imgWrap">
+          <button class="card__imgWrap" type="button" data-full="assets/img/biombo.jpeg.jpeg" aria-label="Ver Biombo en grande">
             <img loading="lazy" src="assets/img/biombo.jpeg.jpeg" alt="Biombo" />
-          </div>
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Biombo</h3>
-            <p>Separadores decorativos en metal con corte fino y diseño a medida.</p>
+            <p>Separadores decorativos con diseño a medida.</p>
           </div>
         </article>
 
         <!-- Panel Interior -->
         <article class="card">
-          <div class="card__imgWrap">
-            <img loading="lazy" src="assets/img/panel-interior.jpeg.jpeg" alt="Panel interior" />
-          </div>
+          <button class="card__imgWrap" type="button" data-full="assets/img/panel-interior.jpeg.jpeg" aria-label="Ver Panel Interior en grande">
+            <img loading="lazy" src="assets/img/panel-interior.jpeg.jpeg" alt="Panel Interior" />
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Panel Interior</h3>
-            <p>Paneles decorativos para ambientes modernos y cálidos.</p>
+            <p>Paneles decorativos para ambientes modernos.</p>
           </div>
         </article>
 
         <!-- Panel Interior (2) -->
         <article class="card">
-          <div class="card__imgWrap">
-            <img loading="lazy" src="assets/img/panel-interior.jpeg (2).jpeg" alt="Panel interior (modelo 2)" />
-          </div>
+          <button class="card__imgWrap" type="button" data-full="assets/img/panel-interior.jpeg (2).jpeg" aria-label="Ver Panel Interior (2) en grande">
+            <img loading="lazy" src="assets/img/panel-interior.jpeg (2).jpeg" alt="Panel Interior (Modelo 2)" />
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Panel Interior</h3>
-            <p>Variantes de diseño para interior. Consultá modelos y medidas.</p>
+            <p>Variantes de diseño para interior.</p>
           </div>
         </article>
 
         <!-- Panel Exterior -->
         <article class="card">
-          <div class="card__imgWrap">
-            <img loading="lazy" src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel exterior" />
-          </div>
+          <button class="card__imgWrap" type="button" data-full="assets/img/panel-exterior.jpeg.jpeg" aria-label="Ver Panel Exterior en grande">
+            <img loading="lazy" src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel Exterior" />
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Panel Exterior</h3>
-            <p>Diseño + resistencia. Ideal para frentes, patios y cerramientos.</p>
+            <p>Resistencia y estética para exterior.</p>
           </div>
         </article>
 
         <!-- Paneles Decorativos -->
         <article class="card">
-          <div class="card__imgWrap">
-            <img loading="lazy" src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles decorativos" />
-          </div>
+          <button class="card__imgWrap" type="button" data-full="assets/img/paneles-decorativos.jpeg.jpeg" aria-label="Ver Paneles Decorativos en grande">
+            <img loading="lazy" src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles Decorativos" />
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Paneles Decorativos</h3>
-            <p>Variedad de modelos. Cortes finos y terminación premium.</p>
+            <p>Modelos variados con corte fino.</p>
           </div>
         </article>
 
         <!-- Pérgolas -->
         <article class="card">
-          <div class="card__imgWrap">
+          <button class="card__imgWrap" type="button" data-full="assets/img/pergolas.jpeg.jpeg" aria-label="Ver Pérgolas en grande">
             <img loading="lazy" src="assets/img/pergolas.jpeg.jpeg" alt="Pérgolas" />
-          </div>
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Pérgolas</h3>
-            <p>Estructuras a medida para exterior, firmes y con estética moderna.</p>
+            <p>Estructuras a medida para exterior.</p>
           </div>
         </article>
 
         <!-- Portón -->
         <article class="card">
-          <div class="card__imgWrap">
+          <button class="card__imgWrap" type="button" data-full="assets/img/porton.jpeg" aria-label="Ver Portón en grande">
             <img loading="lazy" src="assets/img/porton.jpeg" alt="Portón" />
-          </div>
+            <span class="card__hint">Ver</span>
+          </button>
           <div class="card__body">
             <h3>Portón</h3>
-            <p>Portones a medida, estética moderna y estructura sólida.</p>
+            <p>Portones a medida, estructura sólida.</p>
           </div>
         </article>
       </div>
@@ -222,11 +231,56 @@
       </div>
 
       <div class="footer__actions">
+        <!-- Cambiá # por tu link real -->
         <a class="btn btn--ghost" href="#">WhatsApp</a>
         <a class="btn" href="#">Enviar mail</a>
       </div>
     </div>
   </footer>
 
+  <!-- MODAL -->
+  <div class="modal" id="imageModal" aria-hidden="true">
+    <button class="modal__close" id="modalClose" type="button" aria-label="Cerrar">×</button>
+    <img class="modal__img" id="modalImg" alt="Vista ampliada" />
+  </div>
+
+  <script>
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    const modalClose = document.getElementById("modalClose");
+
+    function openModal(src, alt){
+      modal.style.display = "flex";
+      modal.setAttribute("aria-hidden", "false");
+      modalImg.src = src;
+      modalImg.alt = alt || "Vista ampliada";
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeModal(){
+      modal.style.display = "none";
+      modal.setAttribute("aria-hidden", "true");
+      modalImg.src = "";
+      document.body.style.overflow = "";
+    }
+
+    document.querySelectorAll(".card__imgWrap").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const src = btn.getAttribute("data-full");
+        const img = btn.querySelector("img");
+        openModal(src, img ? img.alt : "Vista ampliada");
+      });
+    });
+
+    modalClose.addEventListener("click", closeModal);
+
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) closeModal();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeModal();
+    });
+  </script>
 </body>
 </html>
