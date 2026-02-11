@@ -1,84 +1,196 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Metales Sur | Corte Láser y Fabricación</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<!-- HERO -->
-<header class="hero">
-  <img src="assets/img/logo-metales-sur.jpeg.jpeg" alt="Metales Sur">
-</header>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#">
+        <span class="brand__dot"></span>
+        METALES SUR
+      </a>
 
-<!-- TEXTO PRINCIPAL -->
-<section class="intro">
-  <h1>METALES SUR</h1>
-  <p>Fabricación y venta · Corte láser · Diseño en metal</p>
-</section>
-
-<!-- QUIÉNES SOMOS -->
-<section class="about">
-  <h2>Quiénes somos</h2>
-  <p>
-    En Metales Sur nos especializamos en diseño, fabricación y corte láser de productos metálicos
-    para interiores y exteriores. Trabajamos con precisión, calidad y diseños personalizados
-    adaptados a cada cliente.
-  </p>
-</section>
-
-<!-- VIDEO CORTE LÁSER -->
-<section class="video-section">
-  <video autoplay muted loop playsinline>
-    <source src="assets/video/corte-laser-metales-sur.mp4" type="video/mp4">
-    Tu navegador no soporta video HTML5.
-  </video>
-</section>
-
-<!-- PRODUCTOS -->
-<section class="productos">
-  <h2>Productos</h2>
-
-  <div class="grid">
-
-    <div class="card">
-      <img src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero">
-      <h3>Fogonero</h3>
+      <div class="nav__links">
+        <a href="#productos">Productos</a>
+        <a href="#about">Quiénes somos</a>
+        <a class="btn btn--ghost" href="#contacto">Contacto</a>
+      </div>
     </div>
+  </nav>
 
-    <div class="card">
-      <img src="assets/img/rocket.jpeg.jpeg" alt="Rocket">
-      <h3>Rocket</h3>
+  <!-- HERO -->
+  <header class="hero">
+    <img class="hero__img" src="assets/img/logo-metales-sur.jpeg.jpeg" alt="Metales Sur" />
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <p class="kicker">Corte láser · Diseño · Fabricación</p>
+      <h1>Metal con precisión. <span>Terminación premium.</span></h1>
+      <p class="sub">
+        Productos para interior y exterior, personalizados a medida.
+        Calidad, detalles finos y entrega prolija.
+      </p>
+
+      <div class="hero__cta">
+        <!-- Reemplazá el # por tu link real de WhatsApp o mail -->
+        <a class="btn" href="#contacto">Pedir presupuesto</a>
+        <a class="btn btn--ghost" href="#productos">Ver productos</a>
+      </div>
     </div>
+  </header>
 
-    <div class="card">
-      <img src="assets/img/panel-interior.jpeg.jpeg" alt="Panel interior">
-      <h3>Panel Interior</h3>
+  <!-- INTRO -->
+  <section class="section intro">
+    <div class="container">
+      <h2>Fabricación & Corte Láser</h2>
+      <p>
+        Trabajamos con precisión, calidad y diseños personalizados adaptados a cada cliente.
+        Soluciones en metal para hogares, comercios e industria.
+      </p>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel exterior">
-      <h3>Panel Exterior</h3>
+  <!-- ABOUT -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div>
+          <h2>Quiénes somos</h2>
+          <p>
+            En Metales Sur nos especializamos en diseño, fabricación y corte láser de productos metálicos
+            para interiores y exteriores. Nos enfocamos en detalles, terminación y resistencia.
+          </p>
+
+          <ul class="bullets">
+            <li>Diseños a medida y asesoramiento</li>
+            <li>Terminación prolija y materiales de calidad</li>
+            <li>Entrega clara y seguimiento</li>
+          </ul>
+        </div>
+
+        <div class="about__card">
+          <p class="about__cardTitle">Servicios</p>
+          <div class="about__tags">
+            <span>Corte láser</span>
+            <span>Soldadura</span>
+            <span>Diseño</span>
+            <span>Fabricación</span>
+            <span>Instalación</span>
+          </div>
+          <p class="about__note">
+            Si querés, armamos catálogo completo con medidas, opciones y terminaciones.
+          </p>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles decorativos">
-      <h3>Paneles Decorativos</h3>
+  <!-- VIDEO -->
+  <section class="section video-section" aria-label="Video de corte láser">
+    <div class="container">
+      <div class="videoWrap">
+        <video autoplay muted loop playsinline>
+          <source src="assets/video/corte-laser-metales-sur.mp4" type="video/mp4" />
+          Tu navegador no soporta video HTML5.
+        </video>
+        <div class="videoGlow"></div>
+      </div>
     </div>
+  </section>
 
-    <div class="card">
-      <img src="assets/img/porton.jpeg" alt="Portón">
-      <h3>Portón</h3>
+  <!-- PRODUCTOS -->
+  <section class="section productos" id="productos">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Productos</h2>
+        <p>Una selección de trabajos. Consultanos por medidas, modelos y personalización.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <div class="card__imgWrap">
+            <img loading="lazy" src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero" />
+          </div>
+          <div class="card__body">
+            <h3>Fogonero</h3>
+            <p>Diseños robustos, terminación prolija y opciones personalizadas.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__imgWrap">
+            <img loading="lazy" src="assets/img/rocket.jpeg.jpeg" alt="Rocket" />
+          </div>
+          <div class="card__body">
+            <h3>Rocket</h3>
+            <p>Compacto, eficiente y con estética premium para exterior.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__imgWrap">
+            <img loading="lazy" src="assets/img/panel-interior.jpeg.jpeg" alt="Panel interior" />
+          </div>
+          <div class="card__body">
+            <h3>Panel Interior</h3>
+            <p>Paneles decorativos para ambientes modernos y cálidos.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__imgWrap">
+            <img loading="lazy" src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel exterior" />
+          </div>
+          <div class="card__body">
+            <h3>Panel Exterior</h3>
+            <p>Diseño + resistencia. Ideal para frentes, patios y cerramientos.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__imgWrap">
+            <img loading="lazy" src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles decorativos" />
+          </div>
+          <div class="card__body">
+            <h3>Paneles Decorativos</h3>
+            <p>Variedad de modelos. Cortes finos y terminación premium.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card__imgWrap">
+            <img loading="lazy" src="assets/img/porton.jpeg" alt="Portón" />
+          </div>
+          <div class="card__body">
+            <h3>Portón</h3>
+            <p>Portones a medida, estética moderna y estructura sólida.</p>
+          </div>
+        </article>
+      </div>
     </div>
+  </section>
 
-  </div>
-</section>
+  <!-- CONTACTO / FOOTER -->
+  <footer class="footer" id="contacto">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__brand">METALES SUR</p>
+        <p class="footer__muted">© 2025 · Fabricación en metal · Corte láser</p>
+      </div>
 
-<footer>
-  <p>© 2025 Metales Sur · Fabricación en metal</p>
-</footer>
+      <div class="footer__actions">
+        <!-- Reemplazá estos links por los tuyos -->
+        <a class="btn btn--ghost" href="#">WhatsApp</a>
+        <a class="btn" href="#">Enviar mail</a>
+      </div>
+    </div>
+  </footer>
 
 </body>
 </html>
