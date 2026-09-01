@@ -3,7 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Metales Sur | Corte Láser y Fabricación</title>
+  <title>Metales Sur | Paneles de chapa a medida para fachadas, quinchos y cercos</title>
+  <meta name="description" content="Transformá tu casa o local con paneles de chapa a medida. Fachadas, quinchos, cercos e interiores. Sin obra húmeda, en días y no en meses. Presupuesto sin cargo." />
+  <meta name="theme-color" content="#0b0b0c" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Metales Sur | Paneles de chapa a medida" />
+  <meta property="og:description" content="Fachadas, quinchos, cercos e interiores en chapa a medida. Sin obra húmeda, sin escombros, en días y no en meses." />
+  <meta property="og:image" content="assets/img/panel-exterior-2.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -13,367 +22,173 @@
     <div class="nav__inner">
       <a class="brand" href="#">
         <span class="brand__dot"></span>
-        <span class="brand__text">METALES SUR</span>
+        <span class="brand__text" id="brandName">METALES SUR</span>
       </a>
 
-      <div class="nav__links">
-        <a href="#productos">Productos</a>
-        <a href="#about">Quiénes somos</a>
-        <a class="btn btn--ghost" href="#contacto">Contacto</a>
+      <button class="navToggle" id="navToggle" type="button" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#antes-despues">Antes/Después</a>
+        <a href="#materiales">Materiales</a>
+        <a href="#faq">Preguntas</a>
+        <a class="btn btn--ghost btn--sm" href="#presupuesto">Presupuesto</a>
       </div>
     </div>
   </nav>
 
   <!-- HERO -->
-  <header class="hero">
+  <header class="hero" id="hero">
     <div class="hero__bg"></div>
 
     <div class="container hero__content">
-      <p class="kicker">Corte láser · Diseño · Fabricación</p>
+      <div class="hero__text">
+        <p class="kicker" id="heroKicker">Fachadas · Quinchos · Cercos · Interiores</p>
+        <h1 id="heroTitle">Transformá tu casa o local con paneles de chapa a medida</h1>
+        <p class="sub" id="heroSubtitle">
+          Fachadas, quinchos, cercos e interiores. Sin obra húmeda, sin escombros, en días y no en meses.
+        </p>
 
-      <h1>Metal con precisión.<br><span>Terminación premium.</span></h1>
+        <div class="hero__cta">
+          <a class="btn" id="heroCtaPrimary" href="#" target="_blank" rel="noopener">Pedí tu presupuesto por WhatsApp</a>
+          <a class="btn btn--ghost" id="heroCtaSecondary" href="#antes-despues">Ver trabajos</a>
+        </div>
+      </div>
 
-      <p class="sub">
-        Productos para interior y exterior, personalizados a medida.
-        Calidad, detalles finos y entrega prolija.
-      </p>
-
-      <div class="hero__cta">
-        <a class="btn" href="#contacto">Pedir presupuesto</a>
-        <a class="btn btn--ghost" href="#productos">Ver productos</a>
+      <div class="hero__media">
+        <img id="heroImage" class="hero__img" src="" alt="" width="858" height="1600" />
       </div>
     </div>
   </header>
 
-  <!-- INTRO -->
-  <section class="section intro">
-    <div class="container">
-      <h2>Fabricación & Corte Láser</h2>
-      <p>
-        Soluciones en metal para hogares, comercios e industria.
-        Diseños a medida con calidad y terminación prolija.
-      </p>
-    </div>
+  <!-- BARRA DE CONFIANZA -->
+  <section class="trust">
+    <div class="container trust__grid" id="trustBar"></div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section about" id="about">
-    <div class="container about__grid">
-      <div class="about__left">
-        <h2>Quiénes somos</h2>
-        <p>
-          En Metales Sur nos especializamos en diseño, fabricación y corte láser de productos metálicos
-          para interiores y exteriores. Trabajamos con precisión, resistencia y estética.
-        </p>
-
-        <ul class="bullets">
-          <li>Diseño personalizado y asesoramiento</li>
-          <li>Calidad de materiales y terminación premium</li>
-          <li>Trabajo prolijo y seguimiento</li>
-        </ul>
-      </div>
-
-      <div class="about__card">
-        <p class="about__cardTitle">Servicios</p>
-        <div class="about__tags">
-          <span>Corte láser</span>
-          <span>Soldadura</span>
-          <span>Diseño</span>
-          <span>Fabricación</span>
-          <span>Instalación</span>
-        </div>
-        <p class="about__note">
-          Consultanos por medidas, modelos, terminaciones y presupuestos.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- VIDEO -->
-  <section class="section video-section">
-    <div class="container">
-      <div class="videoWrap">
-        <video autoplay muted loop playsinline>
-          <source src="assets/video/corte-laser-metales-sur.mp4" type="video/mp4" />
-          Tu navegador no soporta video HTML5.
-        </video>
-        <div class="videoGlow"></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCTOS -->
-  <section class="section productos" id="productos">
+  <!-- SERVICIOS -->
+  <section class="section" id="servicios">
     <div class="container">
       <div class="sectionHead">
-        <h2>Productos</h2>
-        <p>Tocá cualquier producto para ver la imagen en grande.</p>
+        <h2>Qué hacemos</h2>
+        <p>Cada proyecto se fabrica en taller y se instala a medida en tu casa o local.</p>
       </div>
+      <div class="grid grid--services" id="servicesGrid"></div>
+    </div>
+  </section>
 
-      <div class="grid">
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/fogonero.jpeg.jpeg"
-            data-title="Fogonero"
-            aria-label="Ver Fogonero en grande">
-            <img loading="lazy" src="assets/img/fogonero.jpeg.jpeg" alt="Fogonero" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Fogonero</h3>
-            <p>Diseños robustos con terminación prolija.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/rocket.jpeg.jpeg"
-            data-title="Rocket"
-            aria-label="Ver Rocket en grande">
-            <img loading="lazy" src="assets/img/rocket.jpeg.jpeg" alt="Rocket" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Rocket</h3>
-            <p>Compacto, eficiente y premium para exterior.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/biombo.jpeg.jpeg"
-            data-title="Biombo"
-            aria-label="Ver Biombo en grande">
-            <img loading="lazy" src="assets/img/biombo.jpeg.jpeg" alt="Biombo" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Biombo</h3>
-            <p>Separadores decorativos con diseño a medida.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/panel-interior.jpeg.jpeg"
-            data-title="Panel Interior"
-            aria-label="Ver Panel Interior en grande">
-            <img loading="lazy" src="assets/img/panel-interior.jpeg.jpeg" alt="Panel Interior" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Panel Interior</h3>
-            <p>Paneles decorativos para ambientes modernos.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/panel-interior.jpeg (2).jpeg"
-            data-title="Panel Interior (Modelo 2)"
-            aria-label="Ver Panel Interior (2) en grande">
-            <img loading="lazy" src="assets/img/panel-interior.jpeg (2).jpeg" alt="Panel Interior (Modelo 2)" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Panel Interior</h3>
-            <p>Variantes de diseño para interior.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/panel-exterior.jpeg.jpeg"
-            data-title="Panel Exterior"
-            aria-label="Ver Panel Exterior en grande">
-            <img loading="lazy" src="assets/img/panel-exterior.jpeg.jpeg" alt="Panel Exterior" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Panel Exterior</h3>
-            <p>Resistencia y estética para exterior.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/paneles-decorativos.jpeg.jpeg"
-            data-title="Paneles Decorativos"
-            aria-label="Ver Paneles Decorativos en grande">
-            <img loading="lazy" src="assets/img/paneles-decorativos.jpeg.jpeg" alt="Paneles Decorativos" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Paneles Decorativos</h3>
-            <p>Modelos variados con corte fino.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/pergolas.jpeg.jpeg"
-            data-title="Pérgolas"
-            aria-label="Ver Pérgolas en grande">
-            <img loading="lazy" src="assets/img/pergolas.jpeg.jpeg" alt="Pérgolas" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Pérgolas</h3>
-            <p>Estructuras a medida para exterior.</p>
-          </div>
-        </article>
-
-        <article class="card">
-          <button class="card__imgWrap"
-            type="button"
-            data-full="assets/img/porton.jpeg"
-            data-title="Portón"
-            aria-label="Ver Portón en grande">
-            <img loading="lazy" src="assets/img/porton.jpeg" alt="Portón" />
-            <span class="card__hint">Ver</span>
-          </button>
-          <div class="card__body">
-            <h3>Portón</h3>
-            <p>Portones a medida, estructura sólida.</p>
-          </div>
-        </article>
-
+  <!-- ANTES Y DESPUÉS -->
+  <section class="section section--alt" id="antes-despues">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Antes y después</h2>
+        <p>Arrastrá el divisor para ver la transformación completa.</p>
       </div>
+      <div class="compareGrid" id="beforeAfterGrid"></div>
+    </div>
+  </section>
+
+  <!-- POR QUÉ CHAPA -->
+  <section class="section" id="por-que-chapa">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Por qué chapa</h2>
+      </div>
+      <div class="whyGrid" id="whyMetalGrid"></div>
+    </div>
+  </section>
+
+  <!-- MATERIALES -->
+  <section class="section section--alt" id="materiales">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Materiales</h2>
+        <p>Distintos tipos de chapa para cada necesidad.</p>
+      </div>
+      <div class="materialsGrid" id="materialsGrid"></div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section class="section" id="proceso">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Cómo trabajamos</h2>
+      </div>
+      <div class="processGrid" id="processSteps"></div>
+    </div>
+  </section>
+
+  <!-- PRESUPUESTO RÁPIDO -->
+  <section class="section section--alt" id="presupuesto">
+    <div class="container">
+      <div class="formCard">
+        <div class="formCard__text">
+          <h2>Pedí tu presupuesto</h2>
+          <p>Completá estos datos y te escribimos por WhatsApp en el momento.</p>
+        </div>
+
+        <form class="quickForm" id="quickForm">
+          <label>
+            Tipo de trabajo
+            <select id="formWorkType" name="tipo" required></select>
+          </label>
+          <label>
+            Metros aproximados
+            <input type="text" name="metros" placeholder="Ej: 20 m²" required />
+          </label>
+          <label>
+            Zona
+            <input type="text" name="zona" placeholder="Ej: Adrogué" required />
+          </label>
+          <label>
+            WhatsApp
+            <input type="tel" name="telefono" placeholder="11 1234-5678" required />
+          </label>
+          <button class="btn" type="submit">Enviar por WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="sectionHead">
+        <h2>Preguntas frecuentes</h2>
+      </div>
+      <div class="faqList" id="faqList"></div>
     </div>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer" id="contacto">
+  <footer class="footer" id="footer">
     <div class="container footer__inner">
       <div>
-        <p class="footer__brand">METALES SUR</p>
-        <p class="footer__muted">© 2025 · Fabricación en metal · Corte láser</p>
+        <p class="footer__brand" id="footerBrand">METALES SUR</p>
+        <p class="footer__muted">© <span id="footerYear"></span> · <span id="footerZone"></span></p>
+        <p class="footer__muted"><a id="footerEmail" href="#"></a></p>
       </div>
 
       <div class="footer__actions">
-        <a class="btn btn--ghost" href="#">WhatsApp</a>
-        <a class="btn" href="#">Enviar mail</a>
+        <a class="btn btn--ghost" data-wa-default href="#" target="_blank" rel="noopener">WhatsApp</a>
+        <a class="btn" href="#presupuesto">Pedir presupuesto</a>
       </div>
     </div>
   </footer>
 
-  <!-- MODAL GALERÍA -->
-  <div class="modal" id="imageModal" aria-hidden="true">
-    <button class="modal__close" id="modalClose" type="button" aria-label="Cerrar">×</button>
+  <!-- WHATSAPP FLOTANTE -->
+  <a class="waFloat" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Hablar por WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.41-1.42a9.87 9.87 0 0 0 4.63 1.18h.01c5.46 0 9.9-4.45 9.9-9.91S17.5 2 12.04 2Zm5.8 14.16c-.24.68-1.4 1.32-1.93 1.4-.5.08-1.11.11-1.79-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09 1-2.37.26-.29.57-.36.76-.36h.55c.18 0 .42-.07.65.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.38-.43.51-.14.14-.29.29-.13.57.17.29.75 1.23 1.6 2 .35.31.7.55 1.05.72.35.17.55.14.75-.09.2-.24.83-.97 1.05-1.3.22-.34.44-.28.74-.17.31.11 1.94.92 2.27 1.08.33.17.55.24.63.38.09.14.09.79-.15 1.47Z"/>
+    </svg>
+  </a>
 
-    <button class="modal__nav modal__prev" id="modalPrev" type="button" aria-label="Anterior">‹</button>
-    <button class="modal__nav modal__next" id="modalNext" type="button" aria-label="Siguiente">›</button>
+  <script id="jsonLd" type="application/ld+json"></script>
 
-    <div class="modal__meta">
-      <div class="modal__title" id="modalTitle">Producto</div>
-      <div class="modal__count" id="modalCount">1 / 1</div>
-    </div>
-
-    <img class="modal__img" id="modalImg" alt="Vista ampliada" />
-  </div>
-
-  <script>
-    const modal = document.getElementById("imageModal");
-    const modalImg = document.getElementById("modalImg");
-    const modalClose = document.getElementById("modalClose");
-    const modalPrev = document.getElementById("modalPrev");
-    const modalNext = document.getElementById("modalNext");
-    const modalTitle = document.getElementById("modalTitle");
-    const modalCount = document.getElementById("modalCount");
-
-    const items = Array.from(document.querySelectorAll(".card__imgWrap")).map(btn => ({
-      src: btn.getAttribute("data-full"),
-      title: btn.getAttribute("data-title") || (btn.querySelector("img")?.alt ?? "Producto")
-    }));
-
-    let currentIndex = 0;
-
-    function setModal(index){
-      currentIndex = (index + items.length) % items.length;
-      modalImg.src = items[currentIndex].src;
-      modalTitle.textContent = items[currentIndex].title;
-      modalCount.textContent = `${currentIndex + 1} / ${items.length}`;
-    }
-
-    function openModal(index){
-      modal.style.display = "flex";
-      modal.setAttribute("aria-hidden", "false");
-      document.body.style.overflow = "hidden";
-      setModal(index);
-    }
-
-    function closeModal(){
-      modal.style.display = "none";
-      modal.setAttribute("aria-hidden", "true");
-      modalImg.src = "";
-      document.body.style.overflow = "";
-    }
-
-    function next(){ setModal(currentIndex + 1); }
-    function prev(){ setModal(currentIndex - 1); }
-
-    document.querySelectorAll(".card__imgWrap").forEach((btn, i) => {
-      btn.addEventListener("click", () => openModal(i));
-    });
-
-    modalClose.addEventListener("click", closeModal);
-    modalNext.addEventListener("click", next);
-    modalPrev.addEventListener("click", prev);
-
-    modal.addEventListener("click", (e) => {
-      if (e.target === modal) closeModal();
-    });
-
-    document.addEventListener("keydown", (e) => {
-      if (modal.getAttribute("aria-hidden") === "true") return;
-      if (e.key === "Escape") closeModal();
-      if (e.key === "ArrowRight") next();
-      if (e.key === "ArrowLeft") prev();
-    });
-
-    // Swipe (mobile)
-    let startX = 0;
-    let startY = 0;
-    let isSwiping = false;
-
-    modalImg.addEventListener("touchstart", (e) => {
-      if (!e.touches || e.touches.length !== 1) return;
-      startX = e.touches[0].clientX;
-      startY = e.touches[0].clientY;
-      isSwiping = true;
-    }, { passive: true });
-
-    modalImg.addEventListener("touchmove", (e) => {
-      if (!isSwiping) return;
-      // evitamos scroll raro mientras swypeás
-      e.preventDefault?.();
-    }, { passive: false });
-
-    modalImg.addEventListener("touchend", (e) => {
-      if (!isSwiping) return;
-      isSwiping = false;
-
-      const endX = e.changedTouches[0].clientX;
-      const endY = e.changedTouches[0].clientY;
-
-      const dx = endX - startX;
-      const dy = endY - startY;
-
-      // swipe horizontal claro
-      if (Math.abs(dx) > 50 && Math.abs(dy) < 60) {
-        if (dx < 0) next();
-        else prev();
-      }
-    }, { passive: true });
-  </script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
